@@ -1,4 +1,4 @@
-#DMReader-android
+<h1>DMReader-android</h1>
 
 **The Purpose of this application is to make it easier to read archived instagram messages after downloading the archive from the instagram database**
 
