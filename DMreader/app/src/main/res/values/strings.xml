@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DM-Reader</string>
+    <string name="importB">import Files</string>
+    <string name="about">About</string>
+    <string name="title_activity_dmList">dmList</string>
+    <string name="developer">Developed By ZM</string>
+    <string name="action_settings">Settings</string>
+    <string name="how">how to use it?</string>
+    <string name="source_code_tv">Source Code</string>
+    <string name="open_source_licenses">open source licenses</string>
+    <string name="close">Close</string>
+    <string name="email_me_desc">Email Me</string>
+    <string name="version">1.0.0</string>
+    <string name="devNum">+964 750 386 4007</string>
+    <string name="email">zanamziry720@gmail.com</string>
+    <string name="howTo">https://github.com/zanamziry/DM-Reader#how-to-use-it</string>
+    <string name="open_source_licenses_link">https://github.com/zanamziry/DM-Reader/blob/master/open-source-licenses.md</string>
+    <string name="source_code">https://github.com/zanamziry/DM-Reader</string>
+    <string name="Instagram">https://www.instagram.com/zana_mziry_</string>
+    <string name="twitter">https://twitter.com/zana_mziry_</string>
+</resources>

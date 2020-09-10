@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popshape"
+    android:elevation="10dp"
+    android:layout_gravity="center"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:id="@+id/popup">
+
+    <TextView
+        android:id="@+id/developer_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/developer"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/myEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/contact_bg"
+        android:contentDescription="@string/email_me_desc"
+        android:padding="5dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/myTwitter"
+        app:layout_constraintTop_toBottomOf="@+id/developer_show" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/myInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/contact_bg"
+        android:padding="5dp"
+        android:src="@drawable/ic_instagram"
+        app:layout_constraintEnd_toStartOf="@+id/helper"
+        app:layout_constraintTop_toBottomOf="@+id/developer_show" />
+
+    <TextView
+        android:id="@+id/helper"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_show" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/myNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/contact_bg"
+        android:padding="5dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintEnd_toStartOf="@+id/myInstagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_show" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/myTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/contact_bg"
+        android:padding="5dp"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintStart_toEndOf="@+id/helper"
+        app:layout_constraintTop_toBottomOf="@+id/developer_show" />
+
+    <TextView
+        android:id="@+id/source_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/GPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/regular"
+        android:padding="3dp"
+        android:text="@string/source_code_tv"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/change_popup_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myTwitter" />
+
+    <TextView
+        android:id="@+id/versionShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="3dp"
+        android:textColor="@color/GPrimary"
+        android:fontFamily="@font/regular"
+        android:text="@string/version"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open_source_license" />
+
+    <TextView
+        android:id="@+id/open_source_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/GPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/regular"
+        android:padding="3dp"
+        android:text="@string/open_source_licenses"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/change_popup_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/source_code" />
+
+    <Button
+        android:id="@+id/popclose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/popup_close_btn"
+        android:text="@string/close"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versionShow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
